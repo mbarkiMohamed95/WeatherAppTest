@@ -19,4 +19,7 @@ interface WeatherDao: BaseDao<WeatherLocalModel>{
     @Query("SELECT * FROM WeatherLocalModel WHERE name =:cityName")
      fun loadWeatherByNameCity(cityName: String): WeatherLocalModel
 
+    @Query("DELETE FROM WeatherLocalModel")
+     fun deleteAllWeather()
+
 }

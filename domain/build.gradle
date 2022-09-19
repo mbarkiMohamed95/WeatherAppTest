@@ -16,6 +16,7 @@ android {
         targetSdk 32
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // Replace com.example.android.dagger with your class path.
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -74,6 +75,17 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3Version"
     implementation "com.squareup.okhttp3:okhttp:$okhttp3Version"
 
-
+    // Local Unit Tests
+    implementation "androidx.test:core:1.2.0"
+    testImplementation "com.google.truth:truth:1.0.1"
+    def arch_version = "2.1.0"
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
+    androidTestImplementation "androidx.arch.core:core-testing:$arch_version"
+    testImplementation "org.robolectric:robolectric:4.3.1"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1"
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.2.1"
+    androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
+    androidTestImplementation "com.google.truth:truth:1.0.1"
+    testImplementation "com.google.truth:truth:1.0.1"
 
 }
