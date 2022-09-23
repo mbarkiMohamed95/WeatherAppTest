@@ -71,6 +71,8 @@ class DetailWeatherFragment : Fragment() {
                         binding.textVisibility.text = "${visibility / 1000} km"
                         binding.textWindDir.text = "${getCardinalDirection(windDeg)}"
                         binding.textWindSpeed.text = windSpeed.toString()
+                        binding.windmill1.winSpeed=windSpeed
+                        binding.windmill2.winSpeed=windSpeed
                     }
 
                 }
