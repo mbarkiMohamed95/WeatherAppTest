@@ -1,3 +1,4 @@
+in this link you can find the app arch: https://miro.com/app/board/uXjVPVAKHx8=/
 
 Introduction With this document I attempt to present the project by presenting the technology, the architecture, and the logic used to develop this project.
 
@@ -14,3 +15,5 @@ DTO Each layer have here owen data model
 Tools : retrofit :to ensure the communication with server room : t create local data base hilt : dependency Injection Flow & channel : to transfer the data between different layer navigation component to ensure the navigation between fragments liveData to present the data from viewModel to the view
 
 Dependency Injection to ensure the independence in the project i use the dependency injection design pattern by all the class have an implementation (interface) . i try to manage the dependency Injection by using the HILT library
+
+
